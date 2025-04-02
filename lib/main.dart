@@ -4,6 +4,7 @@ import 'package:paw/screens/donation_page.dart';
 import 'screens/home_page.dart';
 import 'screens/adoption_page.dart';
 import 'screens/placeholder_page.dart';
+import 'screens/community_page.dart'; 
 
 
 void main() async {
@@ -28,7 +29,7 @@ class PawtopiaApp extends StatelessWidget {
         '/soulmate': (context) => const PlaceholderPage(title: 'Soulmate'),
         '/grid': (context) => const HomePage(),
         '/pets': (context) => const PlaceholderPage(title: 'Pets'),
-        '/public': (context) => const PlaceholderPage(title: 'Public'),
+        '/public': (context) => const CommunityPage(),
         '/profile': (context) => const PlaceholderPage(title: 'Profile'),
       },
     );

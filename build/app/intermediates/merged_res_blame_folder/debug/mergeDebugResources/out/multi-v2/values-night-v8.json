@@ -4,7 +4,7 @@
             "outputFile": "com.example.paw.app-mergeDebugResources-29:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\flutter\\paw\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\pangt\\Projects\\petopiaaa\\petopia\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

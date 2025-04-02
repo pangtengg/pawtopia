@@ -4,8 +4,8 @@ import 'package:paw/screens/donation_page.dart';
 import 'screens/home_page.dart';
 import 'screens/adoption_page.dart';
 import 'screens/placeholder_page.dart';
-import 'screens/community_page.dart'; 
-
+import 'screens/community_page.dart';
+import 'screens/soulmate.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,10 +25,11 @@ class PawtopiaApp extends StatelessWidget {
         '/': (context) => const HomePage(),
         '/adoption': (context) => const AdoptionPage(),
         '/donation': (context) => const DonationPage(),
-        '/clinic': (context) => const PlaceholderPage(title: 'Clinic & Shelter'),
-        '/soulmate': (context) => const PlaceholderPage(title: 'Soulmate'),
+        '/clinic':
+            (context) => const PlaceholderPage(title: 'Clinic & Shelter'),
+        // '/soulmate': (context) => const PlaceholderPage(title: 'Soulmate'),
         '/grid': (context) => const HomePage(),
-        '/pets': (context) => const PlaceholderPage(title: 'Pets'),
+        '/pets': (context) => const AnimalSoulmateApp(),
         '/public': (context) => const CommunityPage(),
         '/profile': (context) => const PlaceholderPage(title: 'Profile'),
       },

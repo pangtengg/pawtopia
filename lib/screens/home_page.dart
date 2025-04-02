@@ -7,7 +7,6 @@ class HomePage extends StatelessWidget {
     {'icon': Icons.home, 'text': 'Adoption', 'route': '/adoption'},
     {'icon': Icons.card_giftcard, 'text': 'Donation', 'route': '/donation'},
     {'icon': Icons.location_on, 'text': 'Clinic & Shelter', 'route': '/clinic'},
-    {'icon': Icons.pets, 'text': 'Soulmate', 'route': '/soulmate'},
   ];
 
   const HomePage({super.key});
@@ -44,14 +43,20 @@ class HomePage extends StatelessWidget {
                 itemCount: menuItems.length,
                 itemBuilder: (context, index) {
                   return Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16.0,
+                      vertical: 8.0,
+                    ),
                     child: Card(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
                       ),
                       elevation: 4,
                       child: ListTile(
-                        contentPadding: const EdgeInsets.symmetric(vertical: 16, horizontal: 24),
+                        contentPadding: const EdgeInsets.symmetric(
+                          vertical: 16,
+                          horizontal: 24,
+                        ),
                         leading: Icon(menuItems[index]['icon'], size: 32),
                         title: Text(
                           menuItems[index]['text'],
@@ -62,7 +67,10 @@ class HomePage extends StatelessWidget {
                         ),
                         trailing: const Icon(Icons.arrow_forward_ios),
                         onTap: () {
-                          Navigator.pushNamed(context, menuItems[index]['route']);
+                          Navigator.pushNamed(
+                            context,
+                            menuItems[index]['route'],
+                          );
                         },
                       ),
                     ),

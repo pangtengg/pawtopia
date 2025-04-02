@@ -7,8 +7,13 @@ class BottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       type: BottomNavigationBarType.fixed,
-      showSelectedLabels: false,
-      showUnselectedLabels: false,
+      showSelectedLabels: true,
+      showUnselectedLabels: true,
+      selectedFontSize: 16,
+      unselectedFontSize: 14,
+      selectedItemColor: Colors.blue,
+      unselectedItemColor: Colors.grey,
+      iconSize: 32,
       onTap: (index) {
         switch (index) {
           case 0:
@@ -25,11 +30,35 @@ class BottomNavBar extends StatelessWidget {
             break;
         }
       },
-      items: const [
-        BottomNavigationBarItem(icon: Icon(Icons.grid_view), label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.pets), label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.public), label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.person), label: ''),
+      items: [
+        BottomNavigationBarItem(
+          icon: Padding(
+            padding: const EdgeInsets.only(top: 8, bottom: 4),
+            child: Icon(Icons.grid_view, size: 30),
+          ),
+          label: 'Dashboard',
+        ),
+        BottomNavigationBarItem(
+          icon: Padding(
+            padding: const EdgeInsets.only(top: 8, bottom: 4),
+            child: Icon(Icons.pets, size: 30),
+          ),
+          label: 'Pets',
+        ),
+        BottomNavigationBarItem(
+          icon: Padding(
+            padding: const EdgeInsets.only(top: 8, bottom: 4),
+            child: Icon(Icons.public, size: 30),
+          ),
+          label: 'Community',
+        ),
+        BottomNavigationBarItem(
+          icon: Padding(
+            padding: const EdgeInsets.only(top: 8, bottom: 4),
+            child: Icon(Icons.person, size: 30),
+          ),
+          label: 'Profile',
+        ),
       ],
     );
   }

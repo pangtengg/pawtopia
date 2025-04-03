@@ -1,0 +1,1 @@
+ C:\\Users\\pangt\\Projects\\petopiaaaaa\\petopia\\.dart_tool\\flutter_build\\ef8d653a1c979833fc02d4c9d27e131e\\native_assets.json: 

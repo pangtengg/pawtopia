@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="gcm_defaultSenderId" translatable="false">292057146230</string>
-    <string name="google_api_key" translatable="false">AIzaSyAPVUyeh34-U6WbHsnhcBw5bGKM4PYrFnU</string>
-    <string name="google_app_id" translatable="false">1:292057146230:android:b34b7f1344af130969d057</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAPVUyeh34-U6WbHsnhcBw5bGKM4PYrFnU</string>
-    <string name="google_storage_bucket" translatable="false">pawtopia-b8e1d.firebasestorage.app</string>
-    <string name="project_id" translatable="false">pawtopia-b8e1d</string>
-</resources>

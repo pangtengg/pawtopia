@@ -28,7 +28,7 @@ class PawtopiaApp extends StatelessWidget {
         '/': (context) => const HomePage(),
         '/adoption': (context) => const AdoptionPage(),
         '/donation': (context) => const DonationPage(),
-        '/clinic': (context) => const PlaceholderPage(title: 'Clinic & Shelter'),
+        '/clinic': (context) => const PlaceholderPage(),
         '/grid': (context) => const HomePage(),
         '/pets': (context) => const AnimalSoulmateApp(),
         '/public': (context) => const CommunityPage(),
@@ -47,7 +47,7 @@ class PawtopiaApp extends StatelessWidget {
 
 // Simple profile page that can access current user info
 class ProfilePage extends StatelessWidget {
-  const ProfilePage({Key? key}) : super(key: key);
+  const ProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) {

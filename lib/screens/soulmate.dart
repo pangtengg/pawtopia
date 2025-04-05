@@ -402,7 +402,7 @@ Your personality traits are:
 ${pet.description}
 
 Respond to your human's message as if you were this pet, with the appropriate personality, emotions, and behaviors. Keep responses relatively short and playful.
-Human's message: ${prompt}
+Human's message: $prompt
 """;
 
       final content = [Content.text(systemPrompt)];
@@ -875,8 +875,8 @@ class _ChatScreenState extends State<ChatScreen> {
               const SizedBox(width: 8),
               FloatingActionButton(
                 onPressed: _sendMessage,
-                child: const Icon(Icons.send),
                 mini: true,
+                child: const Icon(Icons.send),
               ),
             ],
           ),

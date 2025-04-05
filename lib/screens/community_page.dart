@@ -272,7 +272,7 @@ Widget build(BuildContext context) {
         children: [
           Padding(
             padding: EdgeInsets.all(16.0),
-            child: Container(
+            child: SizedBox(
               height: 40,
               child: ListView(
                 scrollDirection: Axis.horizontal,
@@ -333,8 +333,8 @@ Widget build(BuildContext context) {
         // Add functionality to create a new event
         _showCreateEventDialog(context);
       },
-      child: Icon(Icons.add),
       backgroundColor: const Color(0xFF05257C),
+      child: Icon(Icons.add),
     ),
   );
 }
@@ -345,7 +345,7 @@ Widget build(BuildContext context) {
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text('Filter Events'),
-          content: Container(
+          content: SizedBox(
             width: double.maxFinite,
             child: Column(
               mainAxisSize: MainAxisSize.min,
@@ -441,7 +441,7 @@ class CampaignEvent extends StatelessWidget {
   final int currentParticipants;
   final bool isVirtual;
 
-  CampaignEvent({
+  const CampaignEvent({super.key, 
     required this.id,
     required this.title,
     required this.description,
@@ -673,7 +673,7 @@ class CampaignDetailPage extends StatefulWidget {
   final int currentParticipants;
   final bool isVirtual;
 
-  CampaignDetailPage({
+  const CampaignDetailPage({super.key, 
     required this.id,
     required this.title,
     required this.description,
@@ -951,15 +951,15 @@ class _CampaignDetailPageState extends State<CampaignDetailPage> {
                                       );
                                     }
                                     : null,
-                            child: Text(
-                              _isRegistered
-                                  ? 'Cancel Registration'
-                                  : 'Register Now',
-                            ),
                             style: ElevatedButton.styleFrom(
                               backgroundColor:
                                   _isRegistered ? Colors.red : null,
                               padding: EdgeInsets.symmetric(vertical: 12),
+                            ),
+                            child: Text(
+                              _isRegistered
+                                  ? 'Cancel Registration'
+                                  : 'Register Now',
                             ),
                           ),
                         ),
@@ -980,15 +980,15 @@ class _CampaignDetailPageState extends State<CampaignDetailPage> {
                               ),
                             );
                           },
+                          style: OutlinedButton.styleFrom(
+                            padding: EdgeInsets.all(12),
+                            shape: CircleBorder(),
+                          ),
                           child: Icon(
                             _isReminded
                                 ? Icons.notifications_active
                                 : Icons.notifications_none,
                             color: _isReminded ? const Color(0xFF05257C) : Colors.grey,
-                          ),
-                          style: OutlinedButton.styleFrom(
-                            padding: EdgeInsets.all(12),
-                            shape: CircleBorder(),
                           ),
                         ),
                       ],
@@ -1014,7 +1014,7 @@ class _CampaignDetailPageState extends State<CampaignDetailPage> {
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 16),
-                  Container(
+                  SizedBox(
                     height: 220,
                     child: ListView(
                       scrollDirection: Axis.horizontal,

@@ -1,16 +1,16 @@
-# paw
+# Pawopia by KitaSolve
 
-A new Flutter project.
+Pawtopia is a Flutter-based virtual pet and adoption mobile application to promote responsible pet ownership and animal welfare. The app aims to enhance user well-being through virtual pets and support real-world animal adoption and donation efforts.
 
-## Getting Started
+## Problem Statement:
 
-This project is a starting point for a Flutter application.
+Stray animal populations are increasing due to irresponsible ownership and impulse pet purchases, while many shelters remain under-resourced and overcrowded. At the same time, people are experiencing growing levels of stress and loneliness, with limited tools for emotional support.
 
-A few resources to get you started if this is your first Flutter project:
+## Purpose:
+Pawtopia aims to reduce the number of stray animals by promoting mindful pet adoption and responsible ownership. It also offers a virtual pet feature to provide companionship, especially for users who are unable to care for a real pet.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Alignment with AI and SDGs:
+The app is developed using Android Studio and Flutter. It uses Gemini API to power chatbot interactions with virtual pets, enhancing user engagement and emotional connection. It also integrates Firebase for backend services, and OpenStreetMap APIs to locate nearby animal shelters and veterinary clinics. The app aligns with the following UN SDGs:
+**SDG 15 (Life on Land):** Supports adoption over buying and promotes care for animals.
+**SDG 12 (Responsible Consumption & Production):** Encourages informed, ethical decisions in adopting pets rather than impulsive purchases.
+**SDG 3 (Good Health & Well-being):** Enhances mental health by reducing loneliness and stress through virtual pet interaction and community activities.
